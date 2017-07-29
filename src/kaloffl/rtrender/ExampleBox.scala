@@ -8,7 +8,7 @@ object ExampleBox {
   def main(args: Array[String]): Unit = {
     val width = 1280
     val height = 720
-    val texture = ImageIO.read(new File("C:/dev/avatar256.png"))
+    val texture = ImageIO.read(new File("res/test.png"))
 
     new Engine(
       texture = new Texture(
