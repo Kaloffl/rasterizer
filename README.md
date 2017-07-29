@@ -11,6 +11,14 @@ For example: > run.bat ExampleBox
 
 A window should open with an example scene displayed in it.
 
+## usage
+
+You can navigate the 3d scene with the following controls:
+Mouse drag: rotate camera
+w, a, s, d: move forward, left, backward, right
+shift, ctrl: move up, move down
+ctrl + c: copy the current frame to the clipboard
+
 ## credits
 
 Dragon model and texture copied from: https://github.com/kosua20/herebedragons
