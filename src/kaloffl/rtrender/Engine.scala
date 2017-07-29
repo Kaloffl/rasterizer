@@ -13,6 +13,7 @@ class Engine(val texture: Texture,
   def run(): Unit = {
     var player = initial_player
     var time = 0f
+    val clear_color = Color.from_srgb(154, 206, 235) // Can I get the icon in cornflower-blue?
 
     while (true) {
       handleInput(window.events)
@@ -21,7 +22,7 @@ class Engine(val texture: Texture,
 
       val before = System.nanoTime
 
-      window.fill(Color(1, 0, 1))
+      window.fill(clear_color)
       val light_position = Vec3(0, Math.sin(time).toFloat * 0.5f + 0.5f, 0)
       val vertex_shader   = new WorldToCameraShader(view.position, view.right, view.up, view.forward)
       val fragment_shader = new TestShader(view.position, light_position, texture)
@@ -98,6 +99,6 @@ class Engine(val texture: Texture,
 
     Player(
       Viewpoint(player.view.position + player.velocity, forward),
-      player.velocity * 0.75f + acceleration * 0.4f)
+      player.velocity * 0.75f + acceleration * 0.2f)
   }
 }
