@@ -1,0 +1,1 @@
+scala -classpath bin kaloffl.rtrender.%1
