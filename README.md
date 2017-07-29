@@ -10,3 +10,7 @@ Execute run.bat with the name of the class you want to run as the argument.
 For example: > run.bat ExampleBox
 
 A window should open with an example scene displayed in it.
+
+## credits
+
+Dragon model and texture copied from: https://github.com/kosua20/herebedragons

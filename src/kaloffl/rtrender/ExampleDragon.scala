@@ -9,9 +9,9 @@ object ExampleDragon {
     val width = 1280
     val height = 720
 
-    val (vertices, vert_indices, normals, norm_indices, texcoords, texcoord_indices) = ObjImporter.load("C:/dev/dragon.obj")
+    val (vertices, vert_indices, normals, norm_indices, texcoords, texcoord_indices) = ObjImporter.load("res/dragon.obj")
 
-    val texture = ImageIO.read(new File("C:/dev/dragon.png"))
+    val texture = ImageIO.read(new File("res/dragon.png"))
     val tex_width = texture.getWidth
     val tex_height = texture.getHeight
     val tex_buffer = texture.getRGB(0, 0, tex_width, tex_height, null, 0, tex_width)
