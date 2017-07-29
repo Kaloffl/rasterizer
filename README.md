@@ -19,6 +19,13 @@ w, a, s, d: move forward, left, backward, right
 shift, ctrl: move up, move down
 ctrl + c: copy the current frame to the clipboard
 
+## screenshots
+
+Here are the two example scenes that exist at the moment:
+
+![watch out it's a dragon!](screenshot01.png)
+![a box. wow.](screenshot02.png)
+
 ## credits
 
 Dragon model and texture copied from: https://github.com/kosua20/herebedragons
